@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адвокатские услуги</title>
+    <style>
+
+#infoWindow {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: white;">Нужен хороший адвокат?</h1>
+        <h2 style="color: white;">Свяжитесь с нами!</h2>
+        <h1>Адвокатские услуги</h1>
+        <p>Защитим ваши права!</p>
+    </header>
+
+    <section>
+        <h2>О нас</h2>
+        <p>Наша компания предоставляет высококвалифицированные адвокатские услуги с опытом более 10 лет.</p>
+        <p>Мы гарантируем конфиденциальность и индивидуальный подход к каждому клиенту.</p>
+        <button class="cta-button" onclick="showInfo()">Свяжитесь с нами</button>
+        <div id="infoWindow">
+            <p>По номеру телефону: +7 747 255 0266</p>
+            <button class="cta-button" onclick="closeInfo()">Закрыть</button>
+          </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Адвокатские услуги. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function showInfo() {
+          document.getElementById("infoWindow").style.display = "block";
+        }
+      
+        function closeInfo() {
+          document.getElementById("infoWindow").style.display = "none";
+        }
+      </script>
+
+</body>
+</html>
